@@ -3,9 +3,11 @@
 **Date**: September 6, 2026  
 **Entity**: DIALLOUBE-RESEARCH / HYPERNATT  
 **Audience**: Public Audit Page (`/audit`), Buildathon Judges & Quantitative Reviewers  
-**Context**: Application of Remora Principle 4 (Mathematical Truth Over Marketing)
+**Context**: Application of the research charter (Mathematical Truth Over Marketing)
 
 ---
+
+> Editorial clarification, September 16, 2026: the historical figures below are invalid as evidence of an executable strategy. Deployment and capital-status statements describe the dated September 6 record, not a live status feed.
 
 ## 1. Historical 5-Year Lab Benchmark Provenance (Table A)
 
@@ -18,7 +20,7 @@
 ## 2. Quantitative Audit: In-Bar Oracle Detection & Causal Edge
 
 - An exhaustive econometric audit of the historical simulation revealed an in-bar selection effect (look-ahead bias):
-  * At the close of a 15m candle, observing this asymmetric absorption pattern confirms an authentic statistical edge (83% win rate, $+40$ bps net EV, $t\text{-stat} = +19$ across both TRAIN and HOLDOUT).
+  * Selecting completed 15m candles with this absorption pattern produced an apparent historical advantage (83% win rate, $+40$ bps net EV, $t\text{-stat} = +19$ across TRAIN and HOLDOUT). These figures depend on information unavailable at the proposed entry time and do not establish a tradable edge.
   * However, blindly placing a limit order at the structural threshold during the candle without knowing whether the close will confirm the absorption pattern results in negative expected value ($-7.73$ bps).
   * Unconfirmed crossings experience mean adverse movement of $-23$ to $-30$ bps.
 - **Conclusion**: Coarse 15-minute historical bar data is fundamentally insufficient to predict whether a threshold crossing will produce the confirmed absorption pattern before candle close.

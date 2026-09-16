@@ -1,5 +1,17 @@
 # HyperNatt — Public Research & Cryptographic Audit
 
+<!-- PUBLICATION:BEGIN -->
+## Current engineering activity
+
+Latest committed activity: **2026-09-16T00:07:44Z**.
+[Activity and research records](publication/ACTIVITY.md) | [Proof of Process](https://hypernatt.com/audit)
+
+This public documentation is generated from selected committed evidence.
+The proprietary implementation remains private. Activity is not proof of profitability.
+Current paper deployment and publication health are shown on Proof of Process.
+<!-- PUBLICATION:END -->
+
+
 [![Cryptographic Audit](https://img.shields.io/badge/Cryptographic%20Audit-18%2F18%20Verified-brightgreen)](https://hypernatt.com/audit)
 [![Vault](https://img.shields.io/badge/Hyperliquid%20L1-Vault%200x04e2eb...-10b981)](https://app.hyperliquid.xyz/vaults/0x04e2eb302fe9ff23a9d1f2455084af624737a6d8)
 [![Proof of Process](https://img.shields.io/badge/Proof%20of%20Process-SHA--256%20Anchored-8b5cf6)](https://hypernatt.com/audit)

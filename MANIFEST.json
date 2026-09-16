@@ -1,16 +1,1 @@
-{
-  "schema": "hypernatt.audit.public.manifest.v1",
-  "repo": "https://github.com/hypernatt/hypernatt-audit-public",
-  "generated_utc": "2026-09-03T11:00:00Z",
-  "files": [
-    {"path": "notes/000_HOLD_AND_FAILURE_DETECTOR.md", "sha256": "4fbcbfceaa142a5afa400a03939bfac11f97cc0591a03483821068dee0f5476f"},
-    {"path": "notes/420_HOLDING_TIME_CAP.md", "sha256": "acf24136f15d47d1f10bbe9bcb93ff02a5ed4ddf883bb44cae4d0b4377d9f583"},
-    {"path": "notes/645_TRAIL_ADV_TRAIN.md", "sha256": "025a60d51e37748e1f4c8d8420898df77f977b3c28d0365fbc5ba7320bdd5da7"},
-    {"path": "notes/649_TRAIL_ADV_TRAIN_CONFIRM.md", "sha256": "24cd5b417bb729f184b55bbf809e0ad498d4ddfa7ea5f33c2bd9c1f3c34a22f1"},
-    {"path": "notes/653_CAMERA_INTEGRITY.md", "sha256": "aec9515c3412d098275728725f62ef0bb5de2dda6a23db49025539cf2c4b017b"},
-    {"path": "notes/656_FORWARD_ZERO_FILLS.md", "sha256": "e42a95435e282fcd716555a3a2d78523a2b6ee2ea8a5126106ab6965fe2a0015"},
-    {"path": "notes/657_PUBLIC_PROCESS_AUDIT.md", "sha256": "817c6e17a9703916a743fa9669e6c3b0f8f2254478fcec1744bb02e90aab129c"},
-    {"path": "notes/670_RESEARCH_PROVENANCE_AND_L2_RECORDER.md", "sha256": "074ad18d778a192e6903cfa4817b5cc4f1aa830684c0bf78567069015a05bbdb"},
-    {"path": "notes/CAMERAS_INTEGRITY.jsonl", "sha256": "e25a8fb3fa1d133e806b7c3c2990706d112e63afaecddc1fe512ca45f38786bc"}
-  ]
-}
+{"files":[{"path":"ledger.json","sha256":"885cba9384fb5b461ded6e668fdf6858226b133640e281beb627aa829a4438a5"},{"path":"notes/000_HOLD_AND_FAILURE_DETECTOR.md","sha256":"da11fcd3005984f571e0b28df82f62db70c0c3743d96c12987caac0cc6aa93d1"},{"path":"notes/420_HOLDING_TIME_CAP.md","sha256":"aaf7e7919a342c1073df6de0353b75babeadc12601dc7ae41c0ae285ece9d9c0"},{"path":"notes/645_TRAIL_ADV_TRAIN.md","sha256":"c537fd22ce813e440457a20b1b093e7848912c39dcadd32c84a5e9de179ae7a1"},{"path":"notes/649_TRAIL_ADV_TRAIN_CONFIRM.md","sha256":"334ee4732ca3a72410448f1c02a92409f76a361c0631c19c8f9e2b10581530fd"},{"path":"notes/653_CAMERA_INTEGRITY.md","sha256":"eabef429d85b058ec3df5c24eee5628350f5cfd3580fd5711248794eb52082bf"},{"path":"notes/656_FORWARD_ZERO_FILLS.md","sha256":"80bada62a79e1629f763fbcdfa246092ab4deb72cd620acb09249289b246de98"},{"path":"notes/657_PUBLIC_PROCESS_AUDIT.md","sha256":"c6f1b036f6da7263660d6614d6300989e4cc3562081da5acdf03e0da24d2e9de"},{"path":"notes/664_HOLDOUT_645.md","sha256":"5aa07ab9dbb109d69a08ecd89f9401e7c1b1c7e547cfafe23dcda948aafb46a8"},{"path":"notes/667_TRANSITION_LEGACY_TRADE.md","sha256":"b1551343e8e8c3b24f9d5eb849f942d52816f515385b7bd7338f54d633fdc2fd"},{"path":"notes/670_RESEARCH_PROVENANCE_AND_L2_RECORDER.md","sha256":"a6fc9a20cb652c6e2e52bdc627862065e124bf557b9934bbe00d37645d19ce71"},{"path":"notes/671_ENGINE_RELEASE_AND_RESEARCH_PIPELINE.md","sha256":"7958482eae50a23ba360be494202f0d8b689f25c4484af3db17e50b314ee4771"}],"repo":"https://github.com/hypernatt/hypernatt-audit-public","schema":"hypernatt.audit.public.manifest.v1"}
