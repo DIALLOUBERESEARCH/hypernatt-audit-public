@@ -1,42 +1,55 @@
-# Architecture & Non-Custodial Security Model
+# HyperNatt architecture
 
-HyperNatt is an autonomous, non-custodial quantitative execution platform built on Hyperliquid Layer 1. This document details the architectural separation between user custody, verifiable research, and execution boundaries.
+Updated 29 September 2026. The architecture below distinguishes application
+services from the vault capital circuit, which is still being qualified.
 
----
+## Application boundaries
 
-## 1. System Topology
+The web application and PWA provide the dashboard, vault interface, guided mode
+and wallet connection. Wallet signatures remain explicit user actions.
 
-```mermaid
-graph TD
-    User["👤 Depositor (Self-Custodial Wallet)"]
-    HL_Vault["🔒 Hyperliquid L1 Vault Contract (0x04e2eb...)"]
-    Agent["🤖 Remora Execution Agent (0x...)"]
-    L2_Stream["📡 L2 Native WebSocket Recorder (24/7 VPS)"]
-    Audit_Portal["🌐 Public Proof of Process (hypernatt.com/audit)"]
+Authentication and beta admission, vault accounting, swaps and rewards,
+community messaging, NattChat and fiscal reporting have separate responsibilities.
+The frontend consumes their interfaces; it is not the authority that decides
+whether funds were received or a reward was earned.
 
-    User -->|Deposit / Direct Withdraw| HL_Vault
-    Agent -->|Signed Trade Orders Only (Zero Withdraw Rights)| HL_Vault
-    L2_Stream -->|Continuous Multi-Stream Capture| Agent
-    Audit_Portal -->|Cryptographic SHA-256 Hashes| User
-```
+NattSwap requests LI.FI routes and follows transaction settlement. The network
+and asset pair determine the route; one quote does not imply every chain or
+token is supported. A cross-chain source transaction is not by itself proof of
+destination settlement or entitlement to NATT.
 
----
+NattChat and human messaging are distinct services. A private fiscal report
+is not automatically included in the assistant's account context.
 
-## 2. The Non-Custodial Guarantee (Hyperliquid L1)
+## HyperEVM and HyperCore
 
-The most critical invariant of HyperNatt is that **user capital is never custodial**:
+HyperEVM is the EVM environment on chain 999. The vault contracts and share
+token interactions belong there. HyperCore is the exchange and native accounting
+environment. Moving assets between them and valuing open positions requires
+explicit reconciliation; a contract's EVM token balance alone is not its complete
+trading net asset value.
 
-- **Contract Address**: [`0x04e2eb302fe9ff23a9d1f2455084af624737a6d8`](https://app.hyperliquid.xyz/vaults/0x04e2eb302fe9ff23a9d1f2455084af624737a6d8)
-- **Role Separation**:
-  - **Depositor**: Holds 100% ownership of vault shares. At any time, a depositor can trigger a redemption directly back to their self-custodial wallet through the native Hyperliquid interface.
-  - **Leader / Agent**: Holds **strictly order-routing rights**. The Hyperliquid L1 consensus rules mathematically prevent the leader key from initiating withdrawals or transferring funds to arbitrary external addresses.
-- **Mempool Immunity**: Hyperliquid utilizes a Tendermint-based Byzantine Fault Tolerant (BFT) consensus without a public mempool, mitigating front-running and MEV sandwich attacks.
+The new circuit must account for deposits, shares, realized and unrealized
+results, liabilities, fees, in-flight transfers and redemption liquidity.
+It must prevent repeated settlement or claiming the same entitlement twice.
+These are qualification requirements, not a claim that every production path
+has already passed them.
 
----
+The execution engine connects through separately controlled permissions.
+The new capital circuit and engine activation are distinct delivery steps.
+The old native vault's permission model cannot be copied as a guarantee for
+the new contracts.
 
-## 3. Technology Stack
+## Economic and public interfaces
 
-- **L1 Infrastructure**: Hyperliquid Layer 1 (Rust consensus, native orderbook).
-- **Core Orchestration**: Python 3.11+, asynchronous WebSockets, multi-stream sub-second data capture.
-- **Frontend & Public Interface**: Next.js 14, TypeScript, Tailwind CSS, high-security HTTP headers (HSTS Preload, TLS 1.3).
-- **Agent Interoperability**: MCP (Model Context Protocol), dual-rail payment settlement via x402 on Base and Solana mainnets.
+Vault share tokens represent a deposit position; they are distinct from NATT.
+Vault NATT rewards remain disabled. Swap-earned NATT and a separately funded
+staking pool require their own settlement and claim accounting.
+
+HyperNatt Terminal is a separately maintained public MCP integration. Its
+[repository](https://github.com/DIALLOUBERESEARCH/hypernatt-terminal) describes
+its current tools and payment rails. It does not provide custody of vault funds.
+
+The publication process distributes committed, selected evidence to the public
+repositories and Proof of Process. Historical notes stay immutable. Health
+indicates delivery status and a matched paper identity, not profitability.
