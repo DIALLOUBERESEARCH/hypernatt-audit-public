@@ -3,7 +3,7 @@
 <!-- PUBLICATION:BEGIN -->
 ## Current engineering activity
 
-Latest committed activity: **2026-09-29T05:31:59Z**.
+Latest committed activity: **2026-09-29T05:39:35Z**.
 [Activity and research records](publication/ACTIVITY.md) | [Proof of Process](https://hypernatt.com/audit)
 
 This public documentation is generated from selected committed evidence.
@@ -40,11 +40,13 @@ The vault is being migrated to **HyperEVM smart contracts and HyperCore**.
 End-to-end capital movement, valuation, withdrawals and engine integration
 remain separate qualification steps. The historical native vault addresses in
 the archive must not be used as instructions for the new deposit flow.
+New deposits are not yet open to public participation.
 
 The closed beta is limited to 100 participants, including the founder.
 NATT exists in the new economic design with a 21 million maximum supply and
 18 decimals. **Vault trading rewards remain disabled**; the beta reward pathway
 is swap activity, subject to confirmed settlement and reward availability.
+Swap reward issuance is not activated yet.
 The former description of HyperNatt as a project without a token is obsolete.
 
 See the [current product overview](https://github.com/DIALLOUBERESEARCH/hypernatt)
