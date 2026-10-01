@@ -3,7 +3,7 @@
 <!-- PUBLICATION:BEGIN -->
 ## Current engineering activity
 
-Latest committed activity: **2026-10-01T18:12:01Z**.
+Latest committed activity: **2026-10-01T18:15:53Z**.
 [Activity and research records](publication/ACTIVITY.md) | [Proof of Process](https://hypernatt.com/audit)
 
 This public documentation is generated from selected committed evidence.
@@ -34,13 +34,19 @@ The old close-based results were subject to the documented intrabar selection
 bias. Read the original notes and their limitations together; historical
 statistics do not establish a present trading edge.
 
-## Current product transition — 29 September 2026
+## Current product transition — 1 October 2026
 
 The vault is being migrated to **HyperEVM smart contracts and HyperCore**.
 End-to-end capital movement, valuation, withdrawals and engine integration
 remain separate qualification steps. The historical native vault addresses in
 the archive must not be used as instructions for the new deposit flow.
 New deposits are not yet open to public participation.
+
+The replacement mainnet vault has a verified creation receipt, deployed code
+and initial roles. It was created paused. The
+[deployment identities](https://github.com/DIALLOUBERESEARCH/hypernatt/blob/main/docs/NON_CUSTODIAL_ARCHITECTURE.md#verified-deployment--1-october-2026)
+identify this contract separately from historical deployments. This verification
+does not establish successful native transfers or enable the execution engine.
 
 The closed beta is limited to 100 participants, including the founder.
 NATT exists in the new economic design with a 21 million maximum supply and
