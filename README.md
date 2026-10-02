@@ -3,7 +3,7 @@
 <!-- PUBLICATION:BEGIN -->
 ## Current engineering activity
 
-Latest committed activity: **2026-10-02T20:17:25Z**.
+Latest committed activity: **2026-10-02T21:39:05Z**.
 [Activity and research records](publication/ACTIVITY.md) | [Proof of Process](https://hypernatt.com/audit)
 
 This public documentation is generated from selected committed evidence.
@@ -50,9 +50,10 @@ does not establish successful native transfers or enable the execution engine.
 
 The closed beta is limited to 100 participants, including the founder.
 NATT exists in the new economic design with a 21 million maximum supply and
-18 decimals. **Vault trading rewards remain disabled**; the beta reward pathway
-is swap activity, subject to confirmed settlement and reward availability.
-Swap reward issuance is not activated yet.
+18 decimals. **All NATT issuance and rewards remain disabled throughout beta**, including
+vault trades, swaps and RedotPay top-ups. No NATT credit is reserved from beta
+activity. Their common launch is planned with the public vault, after parameter
+approval, publication and explicit activation.
 The former description of HyperNatt as a project without a token is obsolete.
 
 See the [current product overview](https://github.com/DIALLOUBERESEARCH/hypernatt)
