@@ -3,7 +3,7 @@
 <!-- PUBLICATION:BEGIN -->
 ## Current engineering activity
 
-Latest committed activity: **2026-10-06T06:16:56Z**.
+Latest committed activity: **2026-10-06T06:41:40Z**.
 [Activity and research records](publication/ACTIVITY.md) | [Proof of Process](https://hypernatt.com/audit)
 
 This public documentation is generated from selected committed evidence.
@@ -12,7 +12,7 @@ Current paper deployment and publication health are shown on Proof of Process.
 <!-- PUBLICATION:END -->
 
 
-[Proof of Process](https://hypernatt.com/audit) · [Product documentation](https://github.com/DIALLOUBERESEARCH/hypernatt) · [Terminal](https://github.com/DIALLOUBERESEARCH/hypernatt-terminal)
+[Proof of Process](https://hypernatt.com/audit) · [Product documentation](https://github.com/hypernatt/hypernatt) · [Terminal](https://github.com/DIALLOUBE-RESEARCH/hypernatt-terminal)
 
 This repository preserves published research notes and distributes selected
 engineering records. Cryptographic hashes allow readers to check integrity;
@@ -44,7 +44,7 @@ New deposits are not yet open to public participation.
 
 The replacement mainnet vault has a verified creation receipt, deployed code
 and initial roles. It was created paused. The
-[deployment identities](https://github.com/DIALLOUBERESEARCH/hypernatt/blob/main/docs/NON_CUSTODIAL_ARCHITECTURE.md#verified-deployment--1-october-2026)
+[deployment identities](https://github.com/hypernatt/hypernatt/blob/main/docs/NON_CUSTODIAL_ARCHITECTURE.md#verified-deployment--1-october-2026)
 identify this contract separately from historical deployments. This verification
 does not establish successful native transfers or enable the execution engine.
 
@@ -56,7 +56,7 @@ activity. Their common launch is planned with the public vault, after parameter
 approval, publication and explicit activation.
 The former description of HyperNatt as a project without a token is obsolete.
 
-See the [current product overview](https://github.com/DIALLOUBERESEARCH/hypernatt)
+See the [current product overview](https://github.com/hypernatt/hypernatt)
 for the approved fees and feature status, and the
 [official documentation](https://hypernatt.com/docs) for the eight languages.
 
